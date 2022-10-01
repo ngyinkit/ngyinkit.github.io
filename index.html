@@ -3,18 +3,159 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
         <title>About me</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
     </head>
+
     <body>
-        <h1>Me</h1>
-        <img src="me.jpg">
-        <br><br>
-        <p id="vid">Video about my favourite travel destination</p>
-        <iframe
-        src="https://www.youtube.com/embed/oHUD162uWD0?autoplay=1&mute=1">
-        </iframe>
-        <br><br>
-        <p id="bio">Hello I am Yin Kit, a Y2 IS student in SMU.</p>
+
+        <div class="container">
+
+            <h1 class="mx-auto my-3 p-1" id="title">About Me</h1>
+
+            <nav class="navbar navbar-expand-sm navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand">Home</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse show" id="navbarBasic">
+                        <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#travel">Travel</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#resources">Resources</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#game">Game</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container d-sm-inline-flex" id="about">
+                <div class="my-4">
+                    <img id ="me" src="resources/me.jpg">
+                </div>
+                
+                <div id="bio" class="my-4">
+                    <h3>Ng Yin Kit</h3>
+                    Year 2 Information Systems student at SMU
+                    <br><br>
+                    Interested in:
+                    <ul>
+                        <li>Eating</li>
+                        <li>Sleeping</li>
+                        <li>FIRE (Financially Independent, Retire Early)</li>
+                        <li>Coding CSS and JS in a dark room all night</li>
+                    </ul>
+                    Just kidding! I am interested in cybersecurity and hope to go into that field.
+                </div>
+            </div>
+            <hr>
+
+            <div id="travel">
+                <h4>Video promoting my favourite travel destination</h4>
+                <iframe src="https://www.youtube.com/embed/oHUD162uWD0?autoplay=1&mute=1"></iframe>
+            </div>
+            <hr>
+
+            <div class="row mb-4" id="resources">
+                <h4>Resources</h4>
+                <!-- carousel of cards -->
+                <div class="col-sm"></div>
+                <div class="col-sm text-center">
+                    <div id="carouselDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <!-- ctf resource -->
+                            <div class="carousel-item active">
+                                <div class="card">
+                                    <div class="card-header">Cybersecurity</div>
+                                    <img src="resources/pico-icon.png" class="card-img-top" alt="ctf-resource">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            <a class="card-link" href="https://picoctf.org/" target="_blank"><img class="card-icon" src="resources/web-icon.png">PicoCTF</a>
+                                        </h5>
+                                        <p class="card-text">
+                                            Learning resource and platform to practice for CTFs. I used this to prepare for my first CTF in June 2022.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- coding resource -->
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="card-header">Coding</div>
+                                    <img src="resources/w3s-icon.png" class="card-img-top" alt="coding-resource">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            <a class="card-link" href="https://www.w3schools.com/" target="_blank"><img class="card-icon" src="resources/web-icon.png">W3Schools</a>
+                                        </h5>
+                                        <p class="card-text">
+                                            The best learning resource for coding in general. I literally have a tab open right now as I code this website.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- cheatsheet, undone -->
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="card-header">Coding cheatsheets</div>
+                                    <img src="resources/overapi-icon.png" class="card-img-top" alt="cheatsheet">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            <a class="card-link" href="https://overapi.com/" target="_blank"><img class="card-icon" src="resources/web-icon.png">OverAPI.com</a>
+                                        </h5>
+                                        <p class="card-text">
+                                            One-stop platform for coding cheatsheets.
+                                            I personally use their CSS cheatsheet to see all attributes at one go.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="carousel-control-prev" href="#carouselDark" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselDark" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm"></div>
+            </div>
+            <hr>
+            
+            <div id="game">
+                <h4 style="text-align: center">Game</h4>
+                <div class="alert alert-success" role="alert">
+                    A little game that I made using Javascript. Have fun!
+                </div>
+
+                Q: Which is the best mod in SMU? Enter the module code (case insensitive) e.g. IS111
+                <p id="result" style="margin-bottom: 0;"></p>
+                <div class="d-flex mb-4">
+                    <div class="flex-grow-1">
+                        <input type="text" class="form-control" id="ans" placeholder="Enter a module code">
+                    </div>
+                    <button type="button" class="btn btn-success px-4 ms-3" onclick="process_input()">Go!</button>
+                </div>
+            </div>
+
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+        <script src="mod.js"></script>
+
     </body>
 </html>
