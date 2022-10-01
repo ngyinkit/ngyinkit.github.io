@@ -12,4 +12,5 @@ function process_input() {
         result.innerText="Sorry, try again."
         alert("Continue coding CSS and JS in the dark room all night!")
     }
+    document.getElementById("ans").value = ''
 }
