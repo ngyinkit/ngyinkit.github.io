@@ -4,7 +4,7 @@ function process_input() {
     let result = document.getElementById('result')
     if(answer=='IS216'){
         result.style.color = "green"
-        result.innerText="Congratulations! you've won the game!"
+        result.innerText="Congratulations! You've won the game!"
         alert("You're free to go!")
     }
     else{
