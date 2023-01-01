@@ -4,10 +4,6 @@ body{
     display: block;
     margin: auto;
 }
-#title{
-    border: 2px dotted blue;
-    background-color: lightblue;
-}
 #me{
     max-width: 200px;
     height: auto;
