@@ -12,6 +12,8 @@ const app = Vue.createApp({
                 {name: 'Grey Cat The Flag 2022', link: 'https://ctf.nusgreyhats.org/', rank:'148 / 455', writeup:'https://medium.com/@yoongsofties/my-first-ctf-as-an-unprepared-noob-621f0befe966'},
                 {name: 'STACK The Flags 2022', link: 'https://jts.tech.gov.sg/', rank:'72 / 223', writeup:'https://medium.com/@yoongsofties/my-second-ctf-as-a-slightly-less-unprepared-noob-a0b56ef95007'},
                 {name: 'SPIRITCYBER-22', link: 'https://wis.ntu.edu.sg/webexe88/owa/REGISTER_NTU.REGISTER?EVENT_ID=OA22100610102757', rank:'3 / 13', writeup:'https://medium.com/@yoongsofties/spiritcyber-22-writeup-589f9e171b8f'},
+                {name: 'Grey Cat The Flag 2023', link: 'https://ctf.nusgreyhats.org/', rank:'140 / 454', writeup:'https://medium.com/@yoongsofties/grey-cat-the-flag-2023-writeup-ea13830ac805'},
+                {name: 'SEETF 2023', link: 'https://seetf.sg/seetf/about', rank:'138 / 431', writeup:'https://medium.com/@yoongsofties/seetf-2023-writeup-769de53f19ba'},
             ],
 
             hackathons: [
