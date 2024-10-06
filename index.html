@@ -30,7 +30,7 @@
                             <a class="nav-link" href="#competitions">Competitions</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#resources">Resources</a>
+                            <a class="nav-link" href="#projects">Projects</a>
                         </li>
                     </ul>
                 </div>
@@ -46,11 +46,12 @@
                 <div id="bio" class="my-4">
                     <h3>Ng Yin Kit</h3>
                     <hr>
-                    Year 3 Information Systems student at Singapore Management University
+                    Final year Information Systems student at Singapore Management University
                     <br>
                     Digitalisation & Cloud Solutions track | Second major in Cybersecurity
                     <hr>
-                    LinkedIn profile: click <a href="https://www.linkedin.com/in/ng-yin-kit" target="_blank">here</a>
+                    LinkedIn profile: click <a href="https://www.linkedin.com/in/ng-yin-kit" target="_blank">here</a><br>
+                    GitHub profile: click <a href="https://github.com/ngyinkit" target="_blank">here</a>
                 </div>
             </div>
             <hr>
@@ -67,7 +68,7 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                                CTFs
+                                Capture the Flag (CTFs)
                                 </button>
                             </h2>
                             <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
@@ -132,24 +133,24 @@
             </div>
             <hr>
 
-            <div class="row mb-4" id="resources">
-                <h4>Resources</h4>
+            <div class="row mb-4" id="projects">
+                <h4>Projects</h4>
                 <!-- carousel of cards -->
                 <div class="col-sm"></div>
                 <div class="col-sm text-center">
                     <div id="carouselDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <!-- for loop for cards -->
-                            <div :class="['carousel-item', (index === 0 ? 'active' : '')]" v-for="(resource, index) of resources">
+                            <div :class="['carousel-item', (index === 0 ? 'active' : '')]" v-for="(project, index) of projects">
                                 <div class="card">
-                                    <div class="card-header">{{resource.topic}}</div>
-                                    <img :src="resource.source" class="card-img-top" :alt="resource.sitename">
+                                    <div class="card-header">{{project.type}}</div>
+                                    <img :src="project.source" class="card-img-top" :alt="project.name">
                                     <div class="card-body">
                                         <h5 class="card-title">
-                                            <a class="card-link" :href="resource.link" target="_blank"><img class="card-icon" src="resources/web-icon.png">{{resource.sitename}}</a>
+                                            <a class="card-link" :href="project.link" target="_blank"><img class="card-icon" src="resources/web-icon.png">{{project.name}}</a>
                                         </h5>
                                         <p class="card-text">
-                                            {{resource.text}}
+                                            {{project.text}}
                                         </p>
                                     </div>
                                 </div>
