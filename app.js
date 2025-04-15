@@ -2,7 +2,7 @@ const app = Vue.createApp({
     data() {
         return {
             projects: [
-                {type: 'Internship', source: 'resources/peruse.jpg', name: 'Peruse', link: 'https://github.com/ngyinkit/Peruse', text: 'A collaboration with another intern during one of my internships. It is a PoC password scanner built using PySide6, SQLite, python-nmap, and THC-Hydra which scans for weak passwords on a network.'},
+                {type: 'Internship', source: 'resources/peruse.jpg', name: 'Peruse', link: 'https://github.com/ngyinkit/Peruse', text: 'A PoC password scanner built using PySide6, SQLite, python-nmap, and THC-Hydra which scans for weak passwords on a network. Done with another intern during an internship.'},
                 {type: 'Personal', source: 'resources/naver.png', name: 'Naver Dictionary scraper', link: 'https://github.com/ngyinkit/naver-dict-scraper', text: 'A personal project to scrape wordlists in Naver Dictionary. It is a chrome extension that scrapes the words and definitions into a format that can be easily imported into Quizlet/Knowt.'},
                 {type: 'School', source: 'resources/sudo.jpg', name: 'CVE-2019-18634', link: 'https://github.com/ngyinkit/cve-2019-18634', text: 'An analysis of CVE-2019-18634 for one of my school modules. For the full analysis and exploit code, please refer to the Github repo in the link provided.'},
                 // {type: '', source: '', name: '', link: '', text: ''},
